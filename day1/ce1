@@ -1,1 +1,14 @@
-
+const alertMsg=()=>
+{
+    alert("Welcome");
+    console.log("React Application");
+}
+const App=()=>
+{
+    return(
+        <div>
+            <button onClick={alertMsg} >Click me </button>
+        </div>
+    );
+}
+export default App();
