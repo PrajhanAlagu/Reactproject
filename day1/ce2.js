@@ -1,22 +1,23 @@
-
-function Display()
+import React from "react";
+function myobj()
 {
+    alert("Check the console output!");
     let myobject={name:"Madras"};
     let newObject=myobject;
     myobject.name="Chennai";
-    console.log(newObject);
     let myarray=["a","e","i","o"];
     let vowelArray=myarray;
     myarray.push("u");
-    console.log(vowelArray);
-    alert("check the console input");
+    console.log(myobject);
+    console.log(myarray);
 }
-function App()
-{
+const Practice = () =>{
     return(
-        <div className="App">
-            <button onClick={Display}>Click</button><br></br><br></br>
+        <div>
+             <h1>"Let we see the output of JAVASCRIPT"</h1>
+
+            <button onClick={myobj}>CE2</button>
         </div>
-    )
-}
-export default App;
+    );
+};
+export default Practice;
